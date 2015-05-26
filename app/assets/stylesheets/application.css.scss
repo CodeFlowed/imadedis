@@ -11,3 +11,14 @@
  *= require_self
  *= require_tree .
  */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background: rgba(147,206,222,1);
+}
