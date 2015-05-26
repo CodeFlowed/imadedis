@@ -2,18 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-	background: rgba(147,206,222,1);
-}
-
-.hero {
+.meme {
 	width: 75%;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -21,16 +10,16 @@ body {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-.hero h1 {
-	text-align: center;
-	font-family: Helvetica, sans-serif;
-	color: #A4997D;
-	font-size: 3vw;
-}
-
-.hero img {
+.meme > .meme__img {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
 	padding: 20px;
+}
+
+.meme > .meme__title {
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	color: #A4997D;
+	font-size: 3vw;
 }
