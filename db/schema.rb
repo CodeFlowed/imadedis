@@ -11,12 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150526232119) do
+ActiveRecord::Schema.define(version: 20150527013538) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "fave_memes", force: true do |t|
+    t.string   "description"
+    t.string   "author"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "memestars", force: true do |t|
     t.string   "description"
     t.string   "author"
     t.datetime "created_at"

@@ -1,6 +1,6 @@
-class CreateFaveMemes < ActiveRecord::Migration
+class CreateMemestars < ActiveRecord::Migration
   def change
-    create_table :fave_memes do |t|
+    create_table :memestars do |t|
     	t.string :description
     	t.string :author
 
