@@ -9,17 +9,22 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header class="header">
-	<h1 class="header__logo">Fave Memes <small>(Alpha version)</small></h1>
 
-	<h3 class="header__new-meme float-right">
-		<%= link_to "Add Your Meme!", new_meme_path %>
-	</h3>
-</header>
+<div class="container=fluid">
+	<header class="header">
+		<h1 class="header__logo">Fave Memes <small>(Alpha version)</small></h1>
 
-<div class="clear"></div>
+		<h3 class="header__new-meme float-right">
+			<%= link_to "Add Your Meme!", new_meme_path %>
+		</h3>
+	</header>
 
-<%= yield %>
+	<div class="clear"></div>
+
+	<div class="content">
+		<%= yield %>
+	</div>
+</div>
 
 </body>
 </html>
