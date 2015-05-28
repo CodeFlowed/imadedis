@@ -1,4 +1,7 @@
 Imadedis::Application.routes.draw do
+  root 'memes#index'
+
+  resources :memes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,5 +57,4 @@ Imadedis::Application.routes.draw do
   #     resources :products
   #   end
 
-  root 'memes#index'  
 end
