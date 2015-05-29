@@ -12,7 +12,9 @@
 
 <div class="container=fluid">
 	<header class="header">
-		<h1 class="header__logo">Fave Memes <small>(Alpha version)</small></h1>
+		<h1 class="header__logo">
+			<%= link_to 'Fave Memes', root_path %> <small>(Alpha version)</small>
+		</h1>
 
 		<h3 class="header__new-meme float-right">
 			<%= link_to "Add Your Meme!", new_meme_path %>

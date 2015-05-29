@@ -1,7 +1,7 @@
 <div class="memeForm">
 	<h1>Describe Your Meme</h1>
 	
-	<%= simple_form_for @memestar, url: root_path do |f| %>
+	<%= simple_form_for @memestar do |f| %>
 		<%= f.input :description %>
 		<%= f.input :author %>
 		<br>
