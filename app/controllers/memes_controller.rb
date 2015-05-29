@@ -15,6 +15,6 @@ class MemesController < ApplicationController
 	private
 
 	def memestar_params
-		params.require(:memes).permit(:description, :author)
+		params.require(:memestar).permit(:description, :author)
 	end
 end
